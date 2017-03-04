@@ -1,13 +1,13 @@
 
 public class Dog extends Animals {
-	
-	//States(Fields) of object 
+
+	// States(Fields) of object
 	private String name;
 	private String breed;
 	private int age;
 	private String color;
-	
-	//Constructor without parameters
+
+	// Constructor without parameters
 	public Dog() {
 		super();
 		this.name = "Sharo";
@@ -15,8 +15,8 @@ public class Dog extends Animals {
 		this.age = 6;
 		this.color = "beige";
 	}
-	
-	//Constructor with parameters (only parent`s class parameters)
+
+	// Constructor with parameters (only parent`s class parameters)
 	public Dog(boolean isAlive, String type) {
 		super(isAlive, type);
 		this.name = "Sharo";
@@ -24,8 +24,8 @@ public class Dog extends Animals {
 		this.age = 6;
 		this.color = "beige";
 	}
-	
-	//Constructor with all parameters
+
+	// Constructor with all parameters
 	public Dog(boolean isAlive, String type, String name, String breed, int age, String color) {
 		super(isAlive, type);
 		this.name = name;
@@ -34,7 +34,7 @@ public class Dog extends Animals {
 		this.color = color;
 	}
 
-	//Getters and Setters
+	// Getters and Setters
 	public String getName() {
 		return name;
 	}
@@ -67,22 +67,8 @@ public class Dog extends Animals {
 		this.color = color;
 	}
 
-	
-	//Behaviour of object
+	// Behaviour of object
 	public void run() {
 		System.out.println("I run");
 	}
-	
-	public static void main(String[] args) {
-		
-		Dog dog = new Dog(true, "Dog");
-		System.out.println(dog.getIsAlive());
-		System.out.println(dog.getType());
-		System.out.println(dog.getBreed());
-		System.out.println(dog.getAge());
-		System.out.println(dog.getColor());
-		dog.move();
-		dog.run();
-	}
-
 }

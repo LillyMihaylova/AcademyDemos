@@ -1,23 +1,23 @@
 
 public class Animals {
-	
-	//States(Fields) of object
+
+	// States(Fields) of object
 	private boolean isAlive;
 	private String type;
-	
-	//Constructor without parameters
+
+	// Constructor without parameters
 	public Animals() {
 		this.isAlive = true;
 		this.type = type;
 	}
-	
-	//Constructor with parameters
+
+	// Constructor with parameters
 	public Animals(boolean isAlive, String type) {
 		this.isAlive = isAlive;
 		this.type = type;
 	}
-	
-	//Getters and Setters
+
+	// Getters and Setters
 	public boolean getIsAlive() {
 		return isAlive;
 	}
@@ -32,11 +32,10 @@ public class Animals {
 
 	public void setType(String type) {
 		this.type = type;
-	}	
+	}
 
-	//Behaviour of object
+	// Behaviour of object
 	public void move() {
 		System.out.println("I move");
 	}
-
 }
